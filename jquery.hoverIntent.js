@@ -101,6 +101,7 @@
 		};
 
 		// bind the function to the two event listeners
-		return this.bind('mouseenter',handleHover).bind('mouseleave',handleHover);
+		//return this.bind('mouseenter',handleHover).bind('mouseleave',handleHover);
+    return this.live('hover', handleHover);
 	};
 })(jQuery);
